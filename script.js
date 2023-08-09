@@ -1,16 +1,16 @@
-var canvas = document.getElementById( 'canvas' ),
-    canvas_content = canvas.getContext( '2d' ),
-    canvas2 = document.getElementById( 'canvas2' ),
-    canvas_content_2 = canvas2.getContext( '2d' ),
-		// full screen dimensions
-	wind_width = window.innerWidth,
-	wind_height = window.innerHeight,
+var canvas = document.getElementById( 'canvas' )
+var canvas_content = canvas.getContext( '2d' )
+var canvas2 = document.getElementById( 'canvas2' )
+var canvas_content_2 = canvas2.getContext( '2d' )
 
-    character_array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
-    maximum_Char_Count = 100,
-    falling_char_arr = [],
-    fontSize = 10,
-    maxColums = wind_width/(fontSize);
+var wind_width = window.innerWidth
+var wind_height = window.innerHeight
+
+var character_array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+var maximum_Char_Count = 100
+var falling_char_arr = []
+var fontSize = 10
+var maxColums = wind_width/(fontSize);
 
 
 canvas.width = canvas2.width = wind_width;
@@ -41,7 +41,7 @@ Point.prototype.draw = function(canvas_content){
     canvas_content_2.font = fontSize+"px san-serif";
     canvas_content_2.fillText(this.value,this.x,this.y);
 
-    canvas_content.fillStyle = "#0F0";
+    canvas_content.fillStyle = "#FF0000";
     canvas_content.font = fontSize+"px san-serif";
     canvas_content.fillText(this.value,this.x,this.y);
 
